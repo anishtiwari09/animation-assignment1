@@ -1,0 +1,100 @@
+.box{
+    width:100px;
+    height:100px;
+    
+}
+.red{
+    background-color: red;
+}
+.probe2{
+opacity:0;
+transition:opacity 5s;
+}
+.mrgin{
+    margin: 20px;;
+    margin-left:200px;
+}
+.probe1{
+transition:transform 0.5s;
+}
+.probe1:hover{
+transform:scale(1.2)
+}
+.probe3{
+    transform:translate(-115px)
+}
+
+.probe4{
+    width:200px;
+    height:200px;
+    border:20px solid black;
+    border-radius:50%;
+    border-top:20px solid aqua;
+    transition: transform 1s;
+}
+.probe4:hover{
+    transform:rotate(360deg)
+}        
+
+.probe5{
+    transition:border-radius 2s;
+    cursor:pointer;
+}
+
+.probe5:hover{
+    border-radius:50%;
+    
+   
+}
+.timing-function{
+    margin-top:40px;
+    background-color: aquamarine;
+}
+.ease{
+    background-color: azure;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 5s ease;
+}
+.ease-in{
+    background-color: blue;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s ease-in;
+}
+.ease-out{
+    background-color: blueviolet;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s ease-out;
+}
+.ease-in-out{
+    background-color: cadetblue;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s ease-in-out;
+}
+.linear{
+    background-color: gray;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s linear;
+}
+.cubic1{
+    background-color: yellow;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s cubic-bezier(.54,-0.09,.12,.89);
+}
+.cubic2{
+    background-color:pink;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s cubic-bezier(.54,.19,.13,.84)
+}
+.cubic3{
+    background-color:darkslateblue;
+    text-align: center;
+    transform: translate(0px);
+    transition:transform 4.9s cubic-bezier(.13,.84,.13,.84)
+}

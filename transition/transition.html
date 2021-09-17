@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <link rel="stylesheet" href="transition.css">
+
+
+</head>
+
+<body onload="opaCity()">
+    <div class="box red mrgin probe1"></div>
+    <div class="box red mrgin probe2"></div>
+    <div class="box red mrgin probe3 probe2"></div>
+    <div class="probe4 mrgin"></div>
+    <div class="mrgin box red probe5"></div>
+    <div class="timing-function">
+        <div class="probe6 mrgin box ease"><h2>ease</h2></div>
+        <div class="probe6 mrgin box ease-in"><h2>ease-in</h2></div>
+        <div class="probe6 mrgin box ease-out"><h2>ease-out</h2></div>
+        <div class="probe6 mrgin box ease-in-out"><h2>ease-in-out</h2></div>
+        <div class="probe6 mrgin box linear"><h2>linear</h2></div>
+        <div class="probe6 mrgin box cubic1"><h2>cubic-bezier 1 
+        </h2></div>
+        <div class="probe6 mrgin box cubic2"><h2>cubic-bezier 2 
+        </h2></div>
+        <div class="probe6 mrgin box cubic3"><h2>cubic-bezier 3
+        </h2></div>
+
+    </div>
+    <script>
+        function opaCity() {
+            document.getElementsByClassName('probe2')[0].style.opacity = 1
+            console.log('workingfine')
+            document.getElementsByClassName('probe2')[1].style.opacity = 1
+            var parent=document.getElementsByClassName('timing-function')[0]
+            var timingBlock=parent.querySelectorAll('div')
+            console.log(timingBlock.length)
+            for(var i=0;i<timingBlock.length;i++)
+            timingBlock[i].style.transform="translate(70vw)";
+
+        }
+        
+    </script>
+</body>
+
+</html>
